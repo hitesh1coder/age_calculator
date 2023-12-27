@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main_container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: hsl(0, 0%, 86%);
+  gap: 2rem;
+}
+.container {
+  width: 50vw;
+  height: 70vh;
+  background: hsl(0, 0%, 100%);
+  border-radius: 0.8rem 0.8rem 8rem 0.8rem;
+  padding: 1rem;
+  box-shadow: 0 0px 15px hsl(0, 1%, 72%);
+}
+.take_input {
+  display: flex;
+  padding: 1rem;
+  box-shadow: 0 1px 5px hsl(0, 1%, 72%);
+  position: relative;
+}
+.input_container {
+  width: 7rem;
+  display: flex;
+  flex-direction: column;
+}
+.input_container > label {
+  font-size: 0.8rem;
+  color: hsl(0, 1%, 44%);
+  margin: 5px 0;
+}
+#years {
+  width: 7rem;
+}
+.input_container > input {
+  width: 80%;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0.5rem;
+  border: 2px solid hsl(0, 1%, 72%);
+  border-radius: 0.5rem;
+  outline: none;
+}
+.icon {
+  background-color: hsl(259, 100%, 65%);
+  position: absolute;
+  bottom: -2.5rem;
+  right: 1rem;
+  border-radius: 57%;
+  padding: 0.4rem;
+  cursor: pointer;
+}
+.icon:hover {
+  background-color: hsl(259, 98%, 57%);
+}
+.result {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding: 1rem;
+}
+.result_container {
+  display: flex;
+}
+
+.result_container > span {
+  color: hsl(259, 100%, 65%);
+  font-size: 4rem;
+  font-size: bolder;
+}
+.result_container > h4 {
+  font-size: 4rem;
+  font-style: italic;
+  font-weight: bolder;
+}
+.months_error,
+.days_error,
+.years_error {
+  font-size: 0.7rem;
+  color: hsl(0, 100%, 67%);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90vw;
+    height: 60vh;
+  }
+  .result {
+    width: 100%;
+  }
+}
